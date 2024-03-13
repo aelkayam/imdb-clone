@@ -24,7 +24,7 @@ export default function Card({ result }) {
           <p className="flex items-center">
             {result.release_date || result.first_air_date}
             <FiThumbsUp className="h-5 mr-1 ml-3" />
-            {result.vote_count}
+            {result.vote_count.toLocaleString()}
           </p>
         </div>
       </Link>
